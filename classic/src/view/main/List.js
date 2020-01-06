@@ -16,7 +16,6 @@ Ext.define('birdus.view.main.List', {
     },
     scroll : true,
 
-
     columns: [
         {text: 'Date', dataIndex: 'date'},
         {text: 'Name', dataIndex: 'commonName', flex: 1},
@@ -27,5 +26,6 @@ Ext.define('birdus.view.main.List', {
     ],
 
     listeners: {
+        select: 'onItemSelected'
     }
 });

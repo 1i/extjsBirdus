@@ -1,6 +1,6 @@
 var today = new Date();
 var dd = today.getDate();
-var yd = today.getDate()-1;
+var yd = today.getDate() - 1;
 var mm = today.getMonth() + 1; //January is 0!
 
 var yyyy = today.getFullYear();
@@ -13,3 +13,23 @@ if (mm < 10) {
 }
 var yesterday = yyyy.toString().slice(2) + '-' + mm + '-' + yd;
 var dmyDate = yyyy.toString().slice(2) + '-' + mm + '-' + dd;
+var referenceUrl = "http://www.irishbirding.com/birds/web/Display/sighting/";
+function getReferenceBird(record) {
+    url = "http://www.irishbirding.com/birds/web/Display/sighting/";
+    if (record) {
+        var names = record.get("commonName").split(" ");
+        var resultName = "";
+        for (i in names) {
+            resultName = resultName + names[i];
+            if (names.length > 1) {
+                resultName = resultName + "_";
+            }
+        }
+        var reference = record.get("reference").slice(2);
+        referenceUrl = url + reference + "/" + resultName + ".html";
+        return referenceUrl;
+    }
+    else {
+        return referenceUrl;
+    }
+}

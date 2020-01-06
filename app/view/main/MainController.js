@@ -8,12 +8,18 @@ Ext.define('birdus.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
+        console.log(record);
+        if(Array.isArray(record)){
+            record = record[0];
+        }
+        getReferenceBird(record);
+        Ext.Msg.confirm('Confirm Leave Birdus', 'Leave Birdus to see more information on ' + record.get("commonName"), 'onConfirm', this);
+
     },
 
     onConfirm: function (choice) {
         if (choice === 'yes') {
-            //
+            window.location.assign(getReferenceBird());
         }
     }
 });

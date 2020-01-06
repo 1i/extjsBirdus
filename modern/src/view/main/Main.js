@@ -34,7 +34,7 @@ Ext.define('birdus.view.main.Main', {
                 }
             ]
         }, {
-            title: 'Settings',
+            title: 'Info',
             iconCls: 'x-fa fa-cog',
             bind: {
                 html: '<br>' +

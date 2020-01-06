@@ -26,5 +26,6 @@ Ext.define('birdus.view.main.List', {
     ],
 
     listeners: {
+        select: 'onItemSelected'
     }
 });

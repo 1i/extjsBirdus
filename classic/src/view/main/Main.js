@@ -36,7 +36,7 @@ Ext.define('birdus.view.main.Main', {
             },
             flex: 0
         },
-        iconCls: 'fa-th-list'
+        iconCls: 'x-fa fa-th-list'
     },
 
     tabBar: {
@@ -75,16 +75,15 @@ Ext.define('birdus.view.main.Main', {
 
     items: [{
         title: 'Home',
-        iconCls: 'fa-home',
+        iconCls: 'x-fa fa-home',
         items: [
             {
             xtype: 'mainlist',
-            autoScroll : true,
             layout: "fit"
         }]
     }, {
-        title: 'Settings',
-        iconCls: 'fa-cog',
+        title: 'Info',
+        iconCls: 'x-fa fa-cog',
         bind: {
             html: '<br>' +
             'Daily 🐦 sightings from <a href="http://www.irishbirding.com">www.irishbirding.com</a>.' +
