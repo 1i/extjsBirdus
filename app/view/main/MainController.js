@@ -8,7 +8,6 @@ Ext.define('birdus.view.main.MainController', {
     alias: 'controller.main',
 
     onItemSelected: function (sender, record) {
-        console.log(record);
         if(Array.isArray(record)){
             record = record[0];
         }

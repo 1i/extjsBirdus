@@ -1,6 +1,3 @@
-/**
- * This view is an example list of people.
- */
 Ext.define('birdus.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
@@ -9,12 +6,9 @@ Ext.define('birdus.view.main.List', {
         'birdus.store.Birdus'
     ],
 
-    title: 'Birds',
-
     store: {
         type: 'birdus'
     },
-    scroll : true,
 
     columns: [
         {text: 'Date', dataIndex: 'date'},
@@ -22,7 +16,8 @@ Ext.define('birdus.view.main.List', {
         {text: 'Scientific Name', dataIndex: 'scientificName', flex: 1},
         {text: 'Location', dataIndex: 'location', flex: 1},
         {text: 'County', dataIndex: 'county', flex: 1},
-        {text: 'Count', dataIndex: 'count'}
+        {text: 'Count', dataIndex: 'count'},
+        {text: 'Photo', dataIndex: 'photo', flex: 1}
     ],
 
     listeners: {

@@ -7,7 +7,7 @@ Ext.define('birdus.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
-        name: 'birdus'
+        name: 'Birdus'
     }
 
 });

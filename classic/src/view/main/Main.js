@@ -76,10 +76,10 @@ Ext.define('birdus.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'x-fa fa-home',
+        scrollable: true,
         items: [
             {
-            xtype: 'mainlist',
-            layout: "fit"
+            xtype: 'mainlist'
         }]
     }, {
         title: 'Info',

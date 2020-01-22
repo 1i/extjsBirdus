@@ -8,7 +8,8 @@ Ext.define('birdus.model.Bird', {
         { name: 'scientificName', type: 'auto' },
         { name: 'count', type: 'int' },
         { name: 'location', type: 'auto' },
-        { name: 'county', type: 'auto' }
+        { name: 'county', type: 'auto' },
+        { name: 'photo', type: 'string' }
 
     ]
 });
