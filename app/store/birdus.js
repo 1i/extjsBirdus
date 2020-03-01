@@ -6,6 +6,7 @@ Ext.define('birdus.store.Birdus', {
     model: 'birdus.model.Bird',
     autoLoad : true,
 
+    customPage : 0,
     proxy: {
         type: 'ajax',
         url: "https://birdus.s3-eu-west-1.amazonaws.com/" + dmyDate + ".json",

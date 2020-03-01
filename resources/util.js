@@ -26,7 +26,7 @@ function getDateWithOffset(offset){
 
     var yyyy = today.getFullYear();
     if (offsetDate < 10) {
-        offsetDate = '0' + dd;
+        offsetDate = '0' + offsetDate;
         yd = '0' + yd;
     }
     if (mm < 10) {
