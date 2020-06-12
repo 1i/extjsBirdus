@@ -12,7 +12,7 @@ Ext.define('birdus.view.main.MainController', {
             record = record[0];
         }
         getReferenceBird(record);
-        Ext.Msg.confirm('Confirm Leave Birdus', 'Leave Birdus to see more information on ' + record.get("commonName"), 'onConfirm', this);
+        Ext.Msg.confirm('Confirm Leave Birdus', 'Leave to see more information on ' + record.get("commonName"), 'onConfirm', this);
 
     },
 
