@@ -2,7 +2,7 @@
 
 Daily 🐦 sightings from http://www.irishbirding.com.
 
-A lambda provides the data from irishbirding.com, saving to S3 and DynamoDB.  
+AWS Lambda fetches the data from irishbirding.com, parses and saves to S3 and DynamoDB.  
 Static webhosting is enabled on the S3 bucket along with CORS for `HEAD` and `GET`
  requests for local testing.
 
