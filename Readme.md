@@ -23,7 +23,7 @@ Use Sencha CMD to build a ExtJS responsive web minified app.
 `sencha app build`
 
 
-#### AWSCli
+#### AWS cli
 
-Upload the build folder to S3 using the AWS CLI
+Upload the build folder to S3 using the AWS cli  
 `aws s3 cp /build/ s3://birdus/`
