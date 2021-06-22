@@ -7,7 +7,7 @@ Static webhosting is enabled on the S3 bucket along with *CORS* for `HEAD` and `
  requests to allow for testing between local machine and S3. 
 
 ## Live version
-https://birdus.s3-eu-west-1.amazonaws.com/index.html    
+https://birdus.s3-eu-west-1.amazonaws.com/oldindex.html    
 
 #### Frontend 
 Sencha ExtJS community edition
